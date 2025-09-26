@@ -1,0 +1,428 @@
+pwd
+ssh-keygen -t ed25519
+pwd
+ls -l
+ls -la
+cd .ssh
+ls -l
+cat id_ed25519.pub 
+pwd
+cd ..
+pwd
+man man
+echo hola
+whoami
+who
+w
+ls
+ls -l
+ls -la
+cd repogit
+cd ..
+pwd
+ls
+ls -l
+pwd
+mkdir clase4
+ls
+ls -l
+cd clase4
+ls
+ls -l
+echo linea1
+ls
+ls -l
+echo linea1 > achivo1.txt
+ls -l
+cat archivo.txt
+ls
+cat archivo1.txt
+ls
+ls -l
+cat achivo1.txt
+rename achivo1.txt > archivo1.txt
+rm -r achivo.txt
+rm -r achivo1.txt
+ls
+ls -la
+mkdir Documents
+ls -l
+cd Documents
+cd ..
+cat archivo1.txt
+whoami
+echo archivo1.txt
+cat archivo1.txt
+tree
+sudo apt install tree
+tree
+sudo snap install tree
+tree
+mkdir practica
+ls -l
+cd practica
+ls -l
+touch practica1.txt
+cp practica1.txt practica2.txt
+ls -l
+tree
+rm practica1.txt 
+tree
+mv practica2.txt ~/clase4
+tree
+cd ..
+ls
+tree
+rmdir practica
+ls -l
+rmdir Documents
+ls -l
+id
+logout
+ls -l
+mkdir clase5
+ls -l
+cd clase5
+pwd
+ls -l
+tree
+mkdir facturas pedidos
+tree
+mkdir -p clientes/{facturas,pedidos}
+tree
+mkdir -p {clientes,proveedores}/{facturas,pedidos}
+tree
+mkdir -p contactos/{clientes,proveedores}/{facturas,pedidos}
+tree
+mkdir -p Montero_1/contactos/{clientes,proveedores}/{facturas,pedidos}
+tree
+mkdir -p Montero_2/{mama/{hijo{1..2}},papa/{hijo{1..2},ahijado}}
+tree
+rm -r Montero_2
+tree
+mkdir -p Montero_2/{mama/hijo{1..2},papa/{hijo{1..2},ahijado}}
+tree
+cd --
+tree
+cd --
+ls -l
+pwd
+cd clase5
+ls -l
+tree
+cd ..
+whoami
+who
+w
+id
+cat /etc/passwd
+grep -i vagrant /etc/passwd
+sudo cat /etc/shadow
+sudo grep -i vagrant /etc/shadow
+cat /etc/group
+grep -i vagrant
+grep -i vagrant etc/group
+sudo su 
+whoami
+w
+sudo su
+ls -l
+cat arc_root.txt
+rm arc_root.txt
+la -l
+ls -l
+sudo groupadd Alumnos
+cat /etc/group
+sudo useradd -m -s /bin/bash -c "Usuario pepe" -G Alumnos pepe
+cat /etc/usr
+cat /etc/passwd
+cat /etc/group
+ls -l /home
+sudo passwd pepe
+su - pepe
+whoami
+su - pepe
+sudo usermod -aG sudo pepe
+pwd
+ls -l
+cd repogit
+pwd
+ls -l
+git clone git@github.com:nabuel/TP1_AySO_Montero_Nahuel.git
+ls -l
+cd TP1_AySO_Montero_Nahuel/
+ls -l
+cat /etc/os-release
+grep HOME_URL
+grep HOME_URL /etc/os-release
+grep home_url /etc/os-release
+grep -i Home_url /etc/os-release
+grep -i Home_url /etc/os-release > datos_url.txt
+ls -l
+cat datos_url.txt 
+cat README.md 
+exit
+whoami
+tree
+ls -l
+cd repogit
+ls -l
+cd TP1_AySO_Montero_Nahuel/
+ls
+echo "Usuario=$(whoami)" > datos_usuario.txt
+ls -l
+cat datos_usuario.txt
+git add .
+git config --global user.email "nahuellmontero10@gmail.com"
+git config --global user.name "nabuel"
+git commit -m "ADD: agregado 1er ejercicio sobre datos_usuarios.txt"
+git status
+git push
+exit
+ls -l
+cd repogit
+ls -l
+cd TP1_AySO_Montero_Nahuel/
+ls -l
+pwd
+cd /home/vagrant
+pwd
+cd ..
+whoami
+ls-l
+ls
+cd ..
+ls
+cd /home/vagrant
+ls
+cd repogit
+ls
+cd TP1_AySO_Montero_Nahuel/
+clear
+ls -l
+grep "model name" /proc/cpuinfo | head -n1 >> datos_usuarios.txt
+ls
+ls -l
+cat datos_usuarios.txt
+rm datos_usuarios.txt
+ls -l
+tree
+grep "model name" /proc/cpuinfo | head -n1 >> datos_usuario.txt
+ls -l
+cat datos_usuario.txt 
+git add .
+git commit -m "feat: Añadiendo información de CPU"
+git push
+ls -l
+clear
+ls -l
+cat <<EOF >> README.md
+Alumno: <Nahuel Montero> División: <114>
+Turno: <Turno Mañana>
+EOF
+
+cat README.md 
+rm README.md 
+ls -l
+cat <<EOF >> README.md
+TP1 ARQ Y SO 2025
+Alumno: <Nahuel Montero>
+División: <114>
+Turno: <Turno Mañana>
+EOF
+
+ls -l
+cat README.md 
+git add .
+git commit -m "ADD: Añadiendo Readme y datos de usuario"
+git push
+mkdir -p {materia1,materia2}/uni{1..3}
+tree
+ls -l
+tree
+rm README.md 
+tree
+cat <<EOF>> README.md
+Alumno: Nahuel Montero
+División: 114
+Turno: Mañana
+EOF
+
+cat README.md 
+rm -r {materia1, materia2}
+rm -r materia1
+ls
+rm materia2
+rm -r materia2
+ls -l
+rm README.md 
+ls -l
+cat <<EOF>> README.md
+Alumno: Nahuel Montero
+División: 114
+EOF
+
+rm README.md 
+cat <<EOF>> README.md
+Alumno: Nahuel Montero
+División: 114
+EOF
+
+rm README.md 
+cat <<EOF>> READMe.md
+TP1 ARQ Y SO 2025
+Alumno: Nahuel Montero
+División: 114
+Turno: Mañana
+EOF
+
+ls -l
+mv READMe.md README.md
+ls -l
+cat README.md 
+git add README.md datos_usuario.txt
+git commit -m "ADD: Añadiendo Readme y datos de usuario"
+git push
+exit
+whoami
+ls -l
+cd repogit
+tree
+ls -l
+cd TP1_AySO_Montero_Nahuel/
+ls -l
+cd ..
+pwd
+ls -l
+cd /home/pepe
+ls -l /home
+su - pepe
+whoami
+pwd
+sudo usermod -aG sudo pepe
+su - pepe
+whoami
+pwd
+sudo chown vagrant:vagrant /home/pepe/textopepe.txt
+ls -l /home/pepe
+sudo ls -l /home/pepe
+su - pepe
+clase 5
+cd clase5
+ls -l
+tree
+touch practica1.txt
+tree
+touch practica2.txt
+tree
+ls -l
+chmod 600 practica1.txt 
+ls -l
+chmod 222 practica2.txt 
+ls -l
+chmod 444 practica2.txt 
+ls -l
+echo "linea1" >> practica2.txt 
+sudo echo "linea1" >> practica2.txt 
+chmod 644 practica2.txt 
+ls -l
+echo "linea1" >> practica2.txt 
+cat practica2.txt 
+cd ..
+ls -l
+chmod -R 777 clase5/
+ls -l
+cd
+ls -l
+cdc clase5
+cd clase5
+ls -l
+chmod 666 *.txt
+ls -l
+cd ..
+ls -l
+chmod -R 775 clase5/
+ls -l
+cd clase5
+ls -l
+chmod 666 *.txt
+ls -l
+clear
+cd ..
+ls -l
+mkdir clase6
+ls -l
+cd clase6
+ls -l
+tree
+ls -la
+echo ls -l > script1
+ls -l
+cat script1 
+bash script1 
+echo tree >> script1 
+cat script1 
+bash script1 
+echo pwd >> script1 
+cat script1 
+bash script1 
+echo whoami >> script1 
+clear
+bash script1 
+vim script2.sh
+ls -l
+cat script2.sh 
+./script2.sh
+chmod 764 script2.sh 
+ls -l
+./script2.sh
+vim script3.sh
+ls -l
+chmod 764 script3.sh 
+ls -l
+./script3.sh
+ls -l /home/vagrant
+cd ..
+cd clase7
+ls -l
+cd ..
+cd clase6
+ls -l
+cd /home/vagrant
+ls 
+tree
+cd repogit
+ls -l
+cd TP1_AySO_Montero_Nahuel/
+ls
+tree
+cd /home
+tree
+clear
+pwd
+cd vagrant
+cd repogit
+pwd
+ls -l
+cd TP1_AySO_Montero_Nahuel/
+ls -l
+mkdir -p /home/vagrant/{materia1,materia2}/uni{1..3}
+ls -l
+cd /home/vagrant
+ls -l
+tree
+clear
+pwd
+ls
+cd repogit
+ls
+cd TP1_AySO_Montero_Nahuel/
+ls
+vim script_dir.sh
+cat script_dir.sh 
+chmod 700 script_dir.sh 
+ls -l
+git add .
+git commit -m "ADD: Añadiendo script"
+git push
+history -a
